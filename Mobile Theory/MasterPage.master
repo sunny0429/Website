@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #form1
+        {
+            width: 1450px;
+        }
+        .style1
+        {
+            font-family: "Lucida Sans Unicode";
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <asp:Label ID="Label1" runat="server" Font-Names="Lucida Sans Unicode" 
+         ForeColor="Red" style="z-index: 1; left: 1065px; top: 94px; position: absolute"></asp:Label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+     <asp:ImageButton ID="Logo" runat="server" ImageUrl="~/images/logo.jpg" 
+         
+         style="z-index: 1; left: 10px; top: 23px; position: absolute; height: 86px; width: 321px" />
+     <asp:TextBox ID="SearchBox" runat="server" 
+         style="z-index: 1; left: 1053px; top: 63px; position: absolute; width: 233px" 
+         ToolTip="Search Phones" placeholder="Search Phones..." 
+         ontextchanged="SearchBox_TextChanged" ></asp:TextBox>
+     <asp:ImageButton ID="Search" runat="server" 
+         ImageUrl="~/images/search button.jpg" 
+         
+         
+         style="z-index: 1; left: 1310px; top: 59px; position: absolute; height: 26px; width: 33px" 
+         onclick="Search_Click" CausesValidation="False" />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <asp:Panel ID="Panel1" runat="server" Height="19px" 
+         style="z-index: 1; left: 1054px; top: 18px; position: absolute; height: 19px; width: 308px" 
+         Width="308px">
+         <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" 
+             Font-Names="Lucida Sans Unicode" onclick="LinkButton1_Click" 
+             style="z-index: 1; left: 2px; top: 20px; position: absolute; right: 239px"></asp:LinkButton>
+         &nbsp;<span class="style1">Welcome !</span>&nbsp;<asp:Label ID="Label2" runat="server" 
+             Font-Names="Lucida Sans Unicode"></asp:Label>
+     </asp:Panel>
+     <br />
+     
+     <br />
+     <br />
+
+<br />
+
+<br />
+
+
+     <div id='cssmenu'>
+<ul>
+   <li class='active'><a href='Default.aspx'><span>Home</span></a></li>
+   <li class='has-sub'><a href='mobiles.aspx'><span>MOBILES</span></a>
+      <ul>
+         <li><a href='samsung.aspx'><span>Samsung</span></a></li>
+         <li><a href='apple.aspx'><span>Apple</span></a></li>
+         <li><a href='nokia.aspx'><span>Nokia</span></a></li>
+         <li><a href='lg.aspx'><span>LG</span></a></li>
+         <li><a href='htc.aspx'><span>HTC</span></a></li>
+         <li class='last'><a href='sony.aspx'><span>Sony</span></a></li>
+      </ul>
+   </li>
+   <li><a href='mycart.aspx'><span>MY CART</span></a></li>
+   <li><a href='myaccount.aspx'><span>MY ACCOUNT</span></a></li>
+   <li><a href='loginpage.aspx'><span>LOGIN</span></a></li>
+   <li><a href='about.aspx'><span>ABOUT</span></a></li>
+   
+</ul>
+</div>
+       
+       
+       
+       
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <p>
+&nbsp;
+            </p>
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>
